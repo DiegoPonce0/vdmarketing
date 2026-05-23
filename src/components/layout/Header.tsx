@@ -16,9 +16,9 @@ export default function Header() {
           </Link>
         </li>
         <li className="relative group">
-          <span className="text-gray-600 hover:text-gray-800 cursor-pointer">
+          <Link href="/services" className="text-gray-600 hover:text-gray-800">
             Servicios
-          </span>
+          </Link>
         </li>
         <li>
           <Link href="/blog" className="text-gray-600 hover:text-gray-800">
