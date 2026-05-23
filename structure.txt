@@ -1,0 +1,23 @@
+src/
+├── app/
+│   ├── blog/
+│   │   ├── [slug]/page.tsx   ← Post individual
+│   │   └── page.tsx          ← Lista de posts
+│   ├── contact/page.tsx      ← Formulario de contacto
+│   ├── layout.tsx            ← Root layout (metadata actualizada)
+│   └── page.tsx              ← Home (Hero + Services)
+├── components/
+│   ├── blog/
+│   │   ├── BlogCard.tsx      ← Card de post preview
+│   │   └── BlogList.tsx      ← Grid de BlogCards
+│   ├── contact/
+│   │   └── ContactForm.tsx   ← Form + validación Zod
+│   ├── home/
+│   │   ├── HeroSection.tsx   ← Hero con CTA
+│   │   └── ServicesSection.tsx ← Grid 4 servicios
+│   └── layout/
+│       ├── Header.tsx        ← Logo, nav, menú responsive
+│       └── Footer.tsx        ← Links, redes, copyright
+├── data/posts.ts             ← Posts mockeados
+├── lib/utils.ts              ← Helpers (cn, formatDate)
+└── types/index.ts            ← Interfaces compartidas
