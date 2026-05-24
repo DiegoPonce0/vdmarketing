@@ -32,7 +32,12 @@ export default function BlogCard({ post }: BlogCardProps) {
           </h3>
         </Link>
         <p className="text-gray-600 text-sm mb-3">{post.excerpt}</p>
-        <time className="text-xs text-gray-400">{post.date}</time>
+        <div className="flex items-center justify-between gap-2">
+          <time className="text-xs text-gray-400">{post.date}</time>
+          <Link href={`/blog/${post.slug}`} className="mt-4 inline-block text-sm font-medium bg-blue-100 text-blue-700 px-4 py-2 rounded hover:bg-blue-200 transition">
+            Leer más
+          </Link>
+        </div>
       </div>
     </article>
   );
