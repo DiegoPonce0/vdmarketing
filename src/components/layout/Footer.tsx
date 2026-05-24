@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <nav>
+    <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
         {/* Logo and description */}
         <div className="text-center md:text-left mb-4 md:mb-0">
