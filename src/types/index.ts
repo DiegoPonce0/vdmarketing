@@ -1,6 +1,25 @@
-{/*
-  Shared TypeScript interfaces
-  - Post (id, slug, title, excerpt, content, date, tags, image)
-  - Service (id, title, description, icon)
-  - ContactFormData (name, email, phone, service, message)
-*/}
+export interface Post {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  tags: string[];
+  image: string;
+}
+
+export interface Service {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  message: string;
+}
