@@ -1,7 +1,7 @@
 import HeroServiceSection from "@/components/services/HeroServiceSection";
 import DetailServiceSection from "@/components/services/DetailServiceSection";
 import HowWeWorkSection from "@/components/services/HowWeWorkSection";
-
+import FAQServiceSection from "@/components/services/FAQServiceSection";
 
 export default function ServicesPage() {
   return (
@@ -9,6 +9,7 @@ export default function ServicesPage() {
       <HeroServiceSection />
       <DetailServiceSection />
       <HowWeWorkSection />
+      <FAQServiceSection />
     </main>
   );
 }
