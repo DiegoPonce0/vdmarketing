@@ -1,15 +1,3 @@
-{/*
-  ServicesSection component
-  - Section title "Nuestros Servicios"
-  - 2x2 responsive grid of service cards (1x1 mobile)
-  - 4 services:
-    1. Landing Page — high-conversion campaign pages
-    2. Website — corporate / institutional sites
-    3. Ecommerce — online stores with shopping cart
-    4. SEO Mensual — search engine optimization
-  - Each card: icon, title, description, link
-*/}
-
 export default function ServicesSection() {
   return (
     <section className="py-16 bg-gray-50">
@@ -17,10 +5,13 @@ export default function ServicesSection() {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
           Nuestros Servicios
         </h2>
-        <div className="grid gap-8 md:grid-cols-2">
-          {/* Service Card 1 */}
+        <div className="grid gap-8 md:grid-cols-4">
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-            <div className="text-4xl mb-4">🚀</div>
+            <div className="mb-4">
+              <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               Landing Page
             </h3>
@@ -35,9 +26,12 @@ export default function ServicesSection() {
             </a>
           </div>
 
-          {/* Service Card 2 */}
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-            <div className="text-4xl mb-4">🌐</div>
+            <div className="mb-4">
+              <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               Website
             </h3>
@@ -52,9 +46,12 @@ export default function ServicesSection() {
             </a>
           </div>
 
-          {/* Service Card 3 */}
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-            <div className="text-4xl mb-4">🛒</div>
+            <div className="mb-4">
+              <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+              </svg>
+            </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               Ecommerce
             </h3>
@@ -69,9 +66,12 @@ export default function ServicesSection() {
             </a>
           </div>
 
-          {/* Service Card 4 */}
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-            <div className="text-4xl mb-4">🔍</div>
+            <div className="mb-4">
+              <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               SEO Mensual
             </h3>
