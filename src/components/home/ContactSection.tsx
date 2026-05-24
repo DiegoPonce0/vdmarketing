@@ -8,6 +8,9 @@ export default function ContactSection() {
         <p className="text-gray-600 text-center mb-12">
           Estamos aquí para ayudarte. ¡Contáctanos hoy!
         </p>
+        <button className="block mx-auto bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
+          Agenda una consulta gratuita
+        </button>
       </div>
     </section>
   );
