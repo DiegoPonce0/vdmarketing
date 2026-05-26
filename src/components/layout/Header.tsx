@@ -25,6 +25,11 @@ export default function Header() {
             </Link>
           </li>
           <li>
+            <Link href="/portfolio" className="text-gray-600 hover:text-gray-800">
+              Portafolio
+            </Link>
+          </li>
+          <li>
             <Link href="/blog" className="text-gray-600 hover:text-gray-800">
               Blog
             </Link>
@@ -66,6 +71,11 @@ export default function Header() {
             <li>
               <Link href="/services" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
                 Servicios
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
+                Portafolio
               </Link>
             </li>
             <li>
