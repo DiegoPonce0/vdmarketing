@@ -32,3 +32,9 @@ export interface ContactFormData {
   service: string;
   message: string;
 }
+
+export interface PaginationProps {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}

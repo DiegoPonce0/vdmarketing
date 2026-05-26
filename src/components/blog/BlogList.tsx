@@ -1,13 +1,21 @@
-{/*
-  BlogList component
-  - Receives an array of posts from mock data
-  - Renders a responsive grid of BlogCard components
-*/}
-
 import BlogCard from "@/components/blog/BlogCard";
-import { posts } from "@/data/posts";
+import type { Post } from "@/types";
 
-export default function BlogList() {
+interface BlogListProps {
+  posts: Post[];
+}
+
+export default function BlogList({ posts }: BlogListProps) {
+  if (posts.length === 0) {
+    return (
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-500 text-lg">No se encontraron artículos.</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
