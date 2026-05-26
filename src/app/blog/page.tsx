@@ -7,6 +7,7 @@
 import BlogList from "@/components/blog/BlogList";
 import HeroSection from "@/components/blog/HeroSection";
 import Newsletter from "@/components/blog/Newsletter";
+import Pagination from "@/components/blog/Pagination";
 import SearchBar from "@/components/blog/SearchBar";
 
 export default function BlogPage() {
@@ -15,6 +16,7 @@ export default function BlogPage() {
       <HeroSection />
       <SearchBar />
       <BlogList />
+      <Pagination />
       <Newsletter />
     </main>
   );
