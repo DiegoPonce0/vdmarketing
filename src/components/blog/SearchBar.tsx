@@ -7,7 +7,7 @@ interface SearchBarProps {
   onFilterChange: (filter: string) => void;
 }
 
-const filters = ["Marketing", "Diseño", "Todos los posts", "SEO", "Estrategias"];
+const filters = ["Marketing", "Diseño", "All", "SEO", "Estrategias"];
 
 export default function SearchBar({
   searchTerm,
@@ -29,7 +29,7 @@ export default function SearchBar({
         </div>
         <div className="flex flex-wrap gap-2 justify-start md:justify-end">
           {filters.map((filter) => {
-            const filterValue = filter === "Todos los posts" ? "Todos" : filter;
+            const filterValue = filter === "All" ? "All" : filter;
             const isActive = activeFilter === filterValue;
             return (
               <button

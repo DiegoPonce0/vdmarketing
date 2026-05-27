@@ -7,7 +7,7 @@ const POSTS_PER_PAGE = 6;
 
 export function useBlog(posts: Post[]) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [activeFilter, setActiveFilter] = useState("Todos");
+  const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
   const filteredPosts = useMemo(() => {
@@ -16,7 +16,7 @@ export function useBlog(posts: Post[]) {
         .toLowerCase()
         .includes(searchTerm.toLowerCase());
       const matchesFilter =
-        activeFilter === "Todos" || post.tags.includes(activeFilter);
+        activeFilter === "All" || post.tags.includes(activeFilter);
       return matchesSearch && matchesFilter;
     });
   }, [posts, searchTerm, activeFilter]);
