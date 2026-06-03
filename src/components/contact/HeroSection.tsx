@@ -1,12 +1,17 @@
 export default function HeroSection() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Hablemos de tu proyecto y cómo podemos ayudarte a crecer en línea.
+    <section className="relative py-24 bg-gray-900 flex items-center min-h-[400px]">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/contact-us.webp)" }}
+      />
+      <div className="absolute inset-0 bg-black/60" />
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          Hablemos de tu proyecto
         </h2>
-        <p className="text-gray-600 text-center mb-12">
-          Cuentanos sobre tu proyecto y cómo podemos ayudarte.
+        <p className="text-lg text-gray-200 max-w-xl mx-auto">
+          Cuéntanos sobre tu proyecto y cómo podemos ayudarte a crecer en línea.
         </p>
       </div>
     </section>

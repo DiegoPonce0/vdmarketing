@@ -18,5 +18,6 @@ use ALWAYS pnpm, not npm or yarn
 - Mock data in `src/data/`
 - Routes in `src/app/` using App Router conventions
 - Use Server Components by default, Client Components (`"use client"`) only when interactivity is required (event handlers, hooks, browser APIs)
+- Dont build the app on every change 
 
 <!-- END:nextjs-agent-rules -->

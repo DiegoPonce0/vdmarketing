@@ -16,6 +16,10 @@ export interface Project {
   description: string;
   tags: string[];
   image: string;
+  reto: string;
+  solucion: string;
+  resultado: string;
+  resultadoImage: string;
 }
 
 export interface Service {

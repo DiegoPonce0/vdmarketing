@@ -2,9 +2,11 @@ export default function AboutUsSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 grid gap-8 md:grid-cols-2 md:items-center">
-        <div className="bg-gray-200 rounded-lg h-64 md:h-96 flex items-center justify-center text-gray-500 text-lg">
-          Aquí va la imagen
-        </div>
+        <img
+          src="/images/about-us.webp"
+          alt="Sobre nosotros"
+          className="rounded-lg h-64 md:h-96 w-full object-cover"
+        />
 
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
