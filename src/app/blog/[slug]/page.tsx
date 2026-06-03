@@ -16,7 +16,7 @@ export default async function BlogPostPage({
 
   return (
     <main className="flex flex-col flex-1">
-      <article className="py-16 bg-gray-50">
+      <article className="py-16 bg-surface">
         <div className="container mx-auto px-4 max-w-3xl">
           <Link
             href="/blog"

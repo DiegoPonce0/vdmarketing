@@ -23,12 +23,12 @@ export default function Header() {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-5 flex items-center justify-between relative">
         <Link href="/" className="text-2xl font-bold text-gray-800">
           VDMarketing
         </Link>
 
-        <ul className="hidden md:flex items-center space-x-10">
+        <ul className="hidden md:flex items-center space-x-10 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -44,6 +44,13 @@ export default function Header() {
             </li>
           ))}
         </ul>
+
+        <Link
+          href="/contact"
+          className="hidden md:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-700 transition"
+        >
+          Book a Free Consultation
+        </Link>
 
         <div className="md:hidden" />
 

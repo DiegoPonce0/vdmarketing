@@ -28,7 +28,7 @@ export default function FAQServiceSection() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-surface">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
           Frequently Asked Questions
@@ -42,7 +42,7 @@ export default function FAQServiceSection() {
               <button
                 type="button"
                 onClick={() => toggle(index)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left text-gray-800 font-semibold hover:bg-gray-50 transition"
+                className="w-full flex justify-between items-center px-6 py-4 text-left text-gray-800 font-semibold hover:bg-surface transition"
               >
                 {faq.question}
                 <svg

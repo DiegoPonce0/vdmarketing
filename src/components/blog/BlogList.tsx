@@ -8,7 +8,7 @@ interface BlogListProps {
 export default function BlogList({ posts }: BlogListProps) {
   if (posts.length === 0) {
     return (
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-surface">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-500 text-lg">No articles found.</p>
         </div>
@@ -17,7 +17,7 @@ export default function BlogList({ posts }: BlogListProps) {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-surface">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-12">
           Latest Articles

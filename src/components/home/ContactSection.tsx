@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-surface">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Ready to grow your business online?

@@ -14,7 +14,7 @@ export default function Pagination({
   if (totalPages <= 1) return null;
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-surface">
       <div className="flex justify-center items-center gap-2">
         <button
           type="button"
