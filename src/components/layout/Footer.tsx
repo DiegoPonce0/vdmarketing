@@ -11,7 +11,7 @@ export default function Footer() {
         </div>
 
         {/* Website links */}
-        <div className="flex flex-col items-center md:items-start space-y-2">
+        <div className="flex flex-row items-center justify-center space-x-6">
           <a href="#" className="text-gray-600 hover:text-gray-800">
             Servicios
           </a>

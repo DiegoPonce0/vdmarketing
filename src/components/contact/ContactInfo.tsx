@@ -1,9 +1,11 @@
 export default function ContactInfo() {
   return (
     <div className="space-y-6">
-      <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center text-gray-500 text-lg">
-        Aquí va la imagen
-      </div>
+      <img
+        src="/images/contact-us.webp"
+        alt="Contáctanos"
+        className="rounded-lg h-48 w-full object-cover"
+      />
       <div className="flex gap-4">
         <div className="flex-shrink-0 w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
           <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
