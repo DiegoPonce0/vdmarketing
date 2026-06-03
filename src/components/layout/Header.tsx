@@ -1,44 +1,48 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
+];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-gray-800">
           VDMarketing
         </Link>
 
-        <ul className="hidden md:flex items-center space-x-8">
-          <li>
-            <Link href="/" className="text-gray-600 hover:text-gray-800">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/services" className="text-gray-600 hover:text-gray-800">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link href="/portfolio" className="text-gray-600 hover:text-gray-800">
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" className="text-gray-600 hover:text-gray-800">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-800">
-              Contact
-            </Link>
-          </li>
+        <ul className="hidden md:flex items-center space-x-10">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`pb-1 transition ${
+                  isActive(link.href)
+                    ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                    : "text-gray-600 hover:text-gray-800"
+                }`}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className="md:hidden" />
@@ -63,31 +67,21 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-gray-200">
           <ul className="flex flex-col space-y-2 px-4 py-3">
-            <li>
-              <Link href="/" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/portfolio" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Contact
-              </Link>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={`block ${
+                    isActive(link.href)
+                      ? "text-blue-600 font-semibold"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       )}
