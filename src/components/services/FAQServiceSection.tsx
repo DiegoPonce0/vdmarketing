@@ -4,19 +4,19 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo toma un proyecto típico?",
+    question: "How long does a typical project take?",
     answer:
-      "La mayoría de los proyectos de desarrollo personalizados toman de 8 a 16 semanas dependiendo de la complejidad. Las configuraciones de marketing pueden lanzarse en tan solo 2 semanas, mientras que los proyectos de eCommerce más grandes pueden requerir tiempo adicional para pruebas exhaustivas y migración.",
+      "Most custom development projects range from 8 to 16 weeks depending on complexity. Marketing setups can be launched in as little as 2 weeks, while larger eCommerce builds may require additional time for thorough testing and migration.",
   },
   {
-    question: "¿Cuál es su estructura de precios?",
+    question: "What is your pricing structure?",
     answer:
-      "Nuestros precios se adaptan al alcance, complejidad y objetivos de cada proyecto. Ofrecemos paquetes de precio fijo para entregables claramente definidos y retainers mensuales flexibles para desarrollo continuo, SEO y servicios de marketing digital. Contáctanos para una propuesta personalizada que se alinee con tus objetivos de negocio.",
+      "Our pricing is tailored to the scope, complexity, and goals of each project. We offer fixed-price packages for clearly defined deliverables and flexible monthly retainers for ongoing development, SEO, and digital marketing services. Contact us for a customized proposal that aligns with your business objectives.",
   },
   {
-    question: "¿Ofrecen soporte post-lanzamiento?",
+    question: "Do you provide post-launch support?",
     answer:
-      "Sí. Ofrecemos mantenimiento continuo, monitoreo de rendimiento, actualizaciones de seguridad y mejoras de funcionalidad después del lanzamiento. Ya sea que necesites soporte técnico, actualizaciones de contenido, mejoras SEO u optimización de marketing, nuestro equipo puede proporcionar planes de soporte escalables para asegurar que tu presencia digital siga creciendo.",
+      "Yes. We offer ongoing maintenance, performance monitoring, security updates, and feature enhancements after launch. Whether you need technical support, content updates, SEO improvements, or marketing optimization, our team can provide scalable support plans to ensure your digital presence continues to grow.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function FAQServiceSection() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Preguntas Frecuentes
+          Frequently Asked Questions
         </h2>
         <div className="flex flex-col gap-4 max-w-2xl mx-auto">
           {faqs.map((faq, index) => (

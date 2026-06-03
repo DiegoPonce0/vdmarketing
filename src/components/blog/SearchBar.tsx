@@ -7,7 +7,7 @@ interface SearchBarProps {
   onFilterChange: (filter: string) => void;
 }
 
-const filters = ["Marketing", "Diseño", "All", "SEO", "Estrategias"];
+const filters = ["Marketing", "Design", "All", "SEO", "Strategies"];
 
 export default function SearchBar({
   searchTerm,
@@ -23,7 +23,7 @@ export default function SearchBar({
             type="text"
             value={searchTerm}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Buscar artículos..."
+            placeholder="Search articles..."
             className="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>

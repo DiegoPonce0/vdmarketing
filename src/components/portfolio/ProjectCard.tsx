@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p className="text-gray-600 text-sm mb-3">{project.description}</p>
         <div className="flex items-center justify-between gap-2">
           <Link href={`/portfolio/${project.slug}`} className="mt-4 inline-block text-sm font-medium bg-blue-100 text-blue-700 px-4 py-2 rounded hover:bg-blue-200 transition">
-            Ver Detalles
+            View Details
           </Link>
         </div>
       </div>

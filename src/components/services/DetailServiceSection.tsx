@@ -12,27 +12,27 @@ export default function DetailServiceSection() {
               Landing Page
             </h3>
             <p className="text-gray-600 mb-4">
-              Creamos landing pages de alto impacto diseñadas para convertir visitantes en clientes. Cada página está optimizada para campañas de marketing digital con enfoque en resultados medibles.
+              We create high-impact landing pages designed to turn visitors into customers. Every page is optimized for digital marketing campaigns focused on measurable results.
             </p>
             <ul className="text-left text-gray-600 text-sm space-y-1 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Diseño orientado a conversión
+                Conversion-focused design
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Optimizadas para campañas PPC y redes sociales
+                Optimized for PPC and social media campaigns
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Integración con analytics y CRM
+                Analytics and CRM integration
               </li>
             </ul>
             <Link
               href="/contact"
               className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
             >
-              Ir a contacto
+              Get in Touch
             </Link>
           </div>
 
@@ -43,27 +43,27 @@ export default function DetailServiceSection() {
               Website
             </h3>
             <p className="text-gray-600 mb-4">
-              Desarrollamos aplicaciones web ultrarrápidas y de alta disponibilidad utilizando Next.js y stacks modernos. El rendimiento no es un complemento; es nuestra base.
+              We build lightning-fast, highly available web applications using Next.js and modern stacks. Performance isn&apos;t an afterthought; it&apos;s our baseline.
             </p>
             <ul className="text-left text-gray-600 text-sm space-y-1 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Especialistas en Next.js y React
+                Next.js and React specialists
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Tiempos de carga inferiores a 1 segundo
+                Sub-second load times
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Accesibilidad ante todo (WCAG)
+                Accessibility first (WCAG)
               </li>
             </ul>
             <Link
               href="/contact"
               className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
             >
-              Ir a contacto
+              Get in Touch
             </Link>
           </div>
 
@@ -74,27 +74,27 @@ export default function DetailServiceSection() {
               Ecommerce
             </h3>
             <p className="text-gray-600 mb-4">
-              Maximiza tus ingresos con builds personalizados de Shopify Plus y soluciones headless commerce diseñadas para conversiones de alto volumen.
+              Maximize your revenue with custom Shopify Plus builds and headless commerce solutions designed for high-volume conversions.
             </p>
             <ul className="text-left text-gray-600 text-sm space-y-1 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Migración a Shopify Plus
+                Shopify Plus migration
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Optimización de tasa de conversión
+                Conversion rate optimization
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Integración de pagos sin fricción
+                Seamless payment integration
               </li>
             </ul>
             <Link
               href="/contact"
               className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
             >
-              Ir a contacto
+              Get in Touch
             </Link>
           </div>
 
@@ -105,27 +105,27 @@ export default function DetailServiceSection() {
               SEO
             </h3>
             <p className="text-gray-600 mb-4">
-              Posiciona más alto y mantente ahí. Nuestro SEO técnico basado en datos y estrategias de contenido garantizan un crecimiento orgánico sostenible y escalable.
+              Rank higher and stay there. Our data-driven technical SEO and content strategies ensure your organic growth is sustainable and scalable.
             </p>
             <ul className="text-left text-gray-600 text-sm space-y-1 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Auditoría de Core Web Vitals
+                Core Web Vitals audit
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Estrategia de contenido semántico
+                Semantic content strategy
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">✓</span>
-                Seguimiento de ranking local y global
+                Local and global rank tracking
               </li>
             </ul>
             <Link
               href="/contact"
               className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
             >
-              Ir a contacto
+              Get in Touch
             </Link>
           </div>
         </div>

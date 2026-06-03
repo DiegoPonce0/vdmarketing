@@ -22,7 +22,7 @@ export default async function ProjectPage({
             href="/portfolio"
             className="text-blue-600 hover:text-blue-800 font-medium mb-8 inline-block"
           >
-            ← Volver al portafolio
+            ← Back to portfolio
           </Link>
 
           <div className="flex flex-wrap gap-2 mb-4">
@@ -50,38 +50,35 @@ export default async function ProjectPage({
             className="w-full rounded-lg shadow-md mb-16"
           />
 
-          {/* Reto | Solución */}
           <div className="grid gap-8 md:grid-cols-2 mb-16">
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">El Reto</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">The Challenge</h2>
               <p className="text-gray-600 leading-relaxed">{project.reto}</p>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">La Solución</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">The Solution</h2>
               <p className="text-gray-600 leading-relaxed">{project.solucion}</p>
             </div>
           </div>
 
-          {/* Resultado */}
           <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">El Resultado</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">The Result</h2>
               <p className="text-gray-600 leading-relaxed">{project.resultado}</p>
             </div>
             <img
               src={project.resultadoImage}
-              alt="Resultado del proyecto"
+              alt="Project result"
               className="w-full rounded-lg shadow-md"
             />
           </div>
 
-          {/* CTA */}
           <div className="text-center mt-12">
             <Link
               href="/contact"
               className="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-700 transition text-lg"
             >
-              Solicita un proyecto similar
+              Request a Similar Project
             </Link>
           </div>
         </div>

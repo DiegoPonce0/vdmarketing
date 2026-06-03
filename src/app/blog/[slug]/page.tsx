@@ -22,7 +22,7 @@ export default async function BlogPostPage({
             href="/blog"
             className="text-blue-600 hover:text-blue-800 font-medium mb-8 inline-block"
           >
-            ← Volver al blog
+            ← Back to blog
           </Link>
 
           <div className="flex flex-wrap gap-2 mb-4">

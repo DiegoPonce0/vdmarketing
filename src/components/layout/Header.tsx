@@ -16,17 +16,17 @@ export default function Header() {
         <ul className="hidden md:flex items-center space-x-8">
           <li>
             <Link href="/" className="text-gray-600 hover:text-gray-800">
-              Inicio
+              Home
             </Link>
           </li>
           <li>
             <Link href="/services" className="text-gray-600 hover:text-gray-800">
-              Servicios
+              Services
             </Link>
           </li>
           <li>
             <Link href="/portfolio" className="text-gray-600 hover:text-gray-800">
-              Portafolio
+              Portfolio
             </Link>
           </li>
           <li>
@@ -36,7 +36,7 @@ export default function Header() {
           </li>
           <li>
             <Link href="/contact" className="text-gray-600 hover:text-gray-800">
-              Contacto
+              Contact
             </Link>
           </li>
         </ul>
@@ -65,17 +65,17 @@ export default function Header() {
           <ul className="flex flex-col space-y-2 px-4 py-3">
             <li>
               <Link href="/" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Inicio
+                Home
               </Link>
             </li>
             <li>
               <Link href="/services" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Servicios
+                Services
               </Link>
             </li>
             <li>
               <Link href="/portfolio" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Portafolio
+                Portfolio
               </Link>
             </li>
             <li>
@@ -85,7 +85,7 @@ export default function Header() {
             </li>
             <li>
               <Link href="/contact" className="block text-gray-600 hover:text-gray-800" onClick={() => setMenuOpen(false)}>
-                Contacto
+                Contact
               </Link>
             </li>
           </ul>

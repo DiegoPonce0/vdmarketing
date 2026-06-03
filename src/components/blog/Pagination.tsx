@@ -26,7 +26,7 @@ export default function Pagination({
               : "text-gray-600 border border-gray-200 hover:bg-gray-100"
           }`}
         >
-          Anterior
+          Previous
         </button>
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
@@ -52,7 +52,7 @@ export default function Pagination({
               : "text-gray-600 border border-gray-200 hover:bg-gray-100"
           }`}
         >
-          Siguiente
+          Next
         </button>
       </div>
     </section>

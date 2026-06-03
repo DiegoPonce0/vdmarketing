@@ -3,7 +3,7 @@ export default function ContactInfo() {
     <div className="space-y-6">
       <img
         src="/images/contact-us.webp"
-        alt="Contáctanos"
+        alt="Contact us"
         className="rounded-lg h-48 w-full object-cover"
       />
       <div className="flex gap-4">
@@ -13,7 +13,7 @@ export default function ContactInfo() {
           </svg>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-gray-800">Llámanos</h3>
+          <h3 className="text-lg font-semibold text-gray-800">Call Us</h3>
           <p className="text-gray-600">+1 (555) 123-4567</p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function ContactInfo() {
           </svg>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-gray-800">Escríbenos</h3>
+          <h3 className="text-lg font-semibold text-gray-800">Email Us</h3>
           <p className="text-gray-600">info@vdmarketing.com</p>
         </div>
       </div>
@@ -37,8 +37,8 @@ export default function ContactInfo() {
           </svg>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-gray-800">Horario</h3>
-          <p className="text-gray-600">Lun - Vie, 9:00 AM - 6:00 PM</p>
+          <h3 className="text-lg font-semibold text-gray-800">Hours</h3>
+          <p className="text-gray-600">Mon - Fri, 9:00 AM - 6:00 PM</p>
         </div>
       </div>
     </div>

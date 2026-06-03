@@ -3,7 +3,7 @@ export default function ServicesSection() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Nuestros Servicios
+          Our Services
         </h2>
         <div className="grid gap-8 md:grid-cols-4">
           <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
@@ -16,13 +16,13 @@ export default function ServicesSection() {
               Landing Page
             </h3>
             <p className="text-gray-600 mb-4">
-              Páginas de campaña diseñadas para convertir visitantes en clientes.
+              Campaign pages designed to turn visitors into customers.
             </p>
             <a
               href="#"
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              Ver detalles
+              View Details
             </a>
           </div>
 
@@ -36,13 +36,13 @@ export default function ServicesSection() {
               Website
             </h3>
             <p className="text-gray-600 mb-4">
-              Sitios corporativos e institucionales que reflejan tu marca.
+              Corporate and institutional sites that reflect your brand.
             </p>
             <a
               href="#"
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              Ver detalles
+              View Details
             </a>
           </div>
 
@@ -56,13 +56,13 @@ export default function ServicesSection() {
               Ecommerce
             </h3>
             <p className="text-gray-600 mb-4">
-              Tiendas online con carrito de compras y procesamiento de pagos.
+              Online stores with shopping cart and payment processing.
             </p>
             <a
               href="#"
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              Ver detalles
+              View Details
             </a>
           </div>
 
@@ -73,16 +73,16 @@ export default function ServicesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              SEO Mensual
+              Monthly SEO
             </h3>
             <p className="text-gray-600 mb-4">
-              Optimización continua para mejorar tu posicionamiento en buscadores.
+              Ongoing optimization to improve your search engine ranking.
             </p>
             <a
               href="#"
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              Ver detalles
+              View Details
             </a>
           </div>
         </div>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VDMarketing — Web Design, SEO y Marketing Digital",
+  title: "VDMarketing — Web Design, SEO & Digital Marketing",
   description: "We transform your online presence with stunning web design, effective SEO, and strategic digital marketing. Elevate your brand and reach your audience with VDMarketing.",
 };
 

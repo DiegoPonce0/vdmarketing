@@ -2,12 +2,12 @@ export default function HeroSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12">
-          Articulos y Recomendaciones.
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          Articles & Recommendations
         </h2>
-        <p className="text-gray-600 mb-12">
-          Consejos, trucos y recomendaciones para hacer crecer tu negocio en línea. <br />
-          Explora nuestros últimos artículos. <br />
+        <p className="text-gray-600 text-center mb-12">
+          Tips, tricks, and recommendations to grow your business online. <br />
+          Explore our latest articles. <br />
         </p>
       </div>
     </section>

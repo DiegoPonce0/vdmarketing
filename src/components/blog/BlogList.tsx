@@ -10,7 +10,7 @@ export default function BlogList({ posts }: BlogListProps) {
     return (
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-500 text-lg">No se encontraron artículos.</p>
+          <p className="text-gray-500 text-lg">No articles found.</p>
         </div>
       </section>
     );
@@ -20,7 +20,7 @@ export default function BlogList({ posts }: BlogListProps) {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-12">
-          Últimos Artículos
+          Latest Articles
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (

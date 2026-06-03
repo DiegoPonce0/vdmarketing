@@ -2,28 +2,28 @@ export default function HowWeWorkSection() {
   const steps = [
     {
       num: "01",
-      title: "Descubrimiento",
-      desc: "Inmersión profunda en tu negocio, audiencia y necesidades técnicas.",
+      title: "Discovery",
+      desc: "Deep dive into your business, audience, and technical needs.",
     },
     {
       num: "02",
-      title: "Estrategia",
-      desc: "Trazando la hoja de ruta, el stack tecnológico y el embudo de marketing.",
+      title: "Strategy",
+      desc: "Mapping out the roadmap, tech stack, and marketing funnel.",
     },
     {
       num: "03",
-      title: "Diseño",
-      desc: "Interfaces de alta fidelidad enfocadas en UX e identidad de marca.",
+      title: "Design",
+      desc: "High-fidelity interfaces focused on UX and brand identity.",
     },
     {
       num: "04",
-      title: "Desarrollo",
-      desc: "Código limpio y escalable desarrollado con metodologías ágiles.",
+      title: "Development",
+      desc: "Clean, scalable code developed with agile methodologies.",
     },
     {
       num: "05",
-      title: "Lanzamiento",
-      desc: "Despliegue, pruebas y escalamiento de tu presencia digital.",
+      title: "Launch",
+      desc: "Deployment, testing, and scaling your digital presence.",
     },
   ];
 
@@ -31,10 +31,10 @@ export default function HowWeWorkSection() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
-          Cómo trabajamos
+          How We Work
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Un camino optimizado desde la idea inicial hasta el líder del mercado.
+          A streamlined path from initial idea to market leader.
         </p>
         <div className="relative flex flex-col md:flex-row justify-between gap-8 md:gap-4">
           <div className="hidden md:block absolute top-6 left-6 right-6 h-0.5 bg-gray-200" />

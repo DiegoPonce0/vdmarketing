@@ -4,16 +4,16 @@ export default function AboutUsSection() {
       <div className="container mx-auto px-4 grid gap-8 md:grid-cols-2 md:items-center">
         <img
           src="/images/about-us.webp"
-          alt="Sobre nosotros"
+          alt="About us"
           className="rounded-lg h-64 md:h-96 w-full object-cover"
         />
 
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Sobre nosotros
+            About Us
           </h2>
           <p className="text-gray-600 mb-8">
-            Somos un equipo de profesionales dedicados a crear soluciones digitales que impulsen tu negocio.
+            We are a team of professionals dedicated to creating digital solutions that drive your business forward.
           </p>
 
           <div className="space-y-6">
@@ -24,8 +24,8 @@ export default function AboutUsSection() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Entrega Rápida</h3>
-                <p className="text-gray-600 text-sm">Utilizamos metodologías ágiles para garantizar entregas rápidas sin comprometer la calidad.</p>
+                <h3 className="text-lg font-semibold text-gray-800">Fast Delivery</h3>
+                <p className="text-gray-600 text-sm">We use agile methodologies to ensure fast delivery without compromising quality.</p>
               </div>
             </div>
 
@@ -36,8 +36,8 @@ export default function AboutUsSection() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Optimización Mobile</h3>
-                <p className="text-gray-600 text-sm">Optimizamos cada sitio con mobile-first para asegurar una experiencia fluida en todos los dispositivos.</p>
+                <h3 className="text-lg font-semibold text-gray-800">Mobile Optimization</h3>
+                <p className="text-gray-600 text-sm">We optimize every site mobile-first to ensure a seamless experience across all devices.</p>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export default function AboutUsSection() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800">SEO Friendly</h3>
-                <p className="text-gray-600 text-sm">Optimizamos nuestros sitios para mejorar el posicionamiento en los motores de búsqueda.</p>
+                <p className="text-gray-600 text-sm">We optimize our sites to improve search engine rankings.</p>
               </div>
             </div>
 
@@ -60,8 +60,8 @@ export default function AboutUsSection() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Seguras y Escalables</h3>
-                <p className="text-gray-600 text-sm">Desarrollamos soluciones que son seguras y pueden escalar con las necesidades de tu negocio.</p>
+                <h3 className="text-lg font-semibold text-gray-800">Secure & Scalable</h3>
+                <p className="text-gray-600 text-sm">We develop secure solutions that scale with your business needs.</p>
               </div>
             </div>
           </div>
