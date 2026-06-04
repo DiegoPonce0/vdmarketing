@@ -17,7 +17,7 @@ export default function HeroSection() {
           <button className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-700 transition">
             View Services
           </button>
-          <button className="bg-white/20 text-white font-semibold px-8 py-3 rounded-md hover:bg-white/30 transition backdrop-blur-sm">
+          <button className="bg-white text-gray-800 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition">
             Contact Us
           </button>
         </div>

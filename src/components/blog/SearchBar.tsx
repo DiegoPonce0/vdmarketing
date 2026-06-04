@@ -7,7 +7,7 @@ interface SearchBarProps {
   onFilterChange: (filter: string) => void;
 }
 
-const filters = ["Marketing", "Design", "All", "SEO", "Strategies"];
+const filters = ["All", "Marketing", "Design", "SEO", "Strategies"];
 
 export default function SearchBar({
   searchTerm,
