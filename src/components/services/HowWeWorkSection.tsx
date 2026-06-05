@@ -29,7 +29,7 @@ export default function HowWeWorkSection() {
 
   return (
     <section className="py-16 bg-surface">
-      <div className="container mx-auto px-4">
+      <div className="mx-2 md:mx-4 bg-white rounded-lg shadow-md p-6 md:p-10">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           How We Work
         </h2>

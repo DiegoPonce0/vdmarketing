@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function ContactSection() {
   return (
     <section className="py-16 bg-surface">
-      <div className="container mx-auto px-4">
-        <div className="bg-white rounded-lg shadow-md p-8 md:p-12 max-w-3xl mx-auto text-center">
+      <div className="mx-2 md:mx-4 bg-white rounded-lg shadow-md p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Ready to Start Your Project?
           </h2>
@@ -26,7 +25,6 @@ export default function ContactSection() {
             </Link>
           </div>
         </div>
-      </div>
     </section>
   );
 }

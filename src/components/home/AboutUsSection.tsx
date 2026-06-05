@@ -1,6 +1,6 @@
 export default function AboutUsSection() {
   return (
-    <section className="py-16 bg-surface">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4 grid gap-8 md:grid-cols-2 md:items-center">
         <img
           src="/images/about-us.webp"
