@@ -42,7 +42,7 @@ export default function FAQServiceSection() {
               <button
                 type="button"
                 onClick={() => toggle(index)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left text-gray-800 font-semibold hover:bg-surface transition"
+                className="w-full flex justify-between items-center px-6 py-4 text-left text-gray-800 font-semibold hover:bg-gray-100 transition"
               >
                 {faq.question}
                 <svg

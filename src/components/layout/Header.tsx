@@ -1,97 +1,80 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+import Logo from './Logo';
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: '/', label: 'HOME' },
+  { href: '/services', label: 'SERVICES' },
+  { href: '/blog', label: 'BLOG' },
+  { href: '/contact', label: 'CONTACT' },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
-    return pathname.startsWith(href);
-  };
-
   return (
-    <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-5 flex items-center justify-between relative">
-        <Link href="/" className="text-2xl font-bold text-gray-800">
-          VDMarketing
+    <header className='fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100'>
+      <div className='container mx-auto px-4 py-4 flex items-center justify-between relative'>
+        <Link href='/'>
+          <Logo />
         </Link>
 
-        <ul className="hidden md:flex items-center space-x-10 absolute left-1/2 -translate-x-1/2">
+        <nav className='hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2'>
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={`pb-1 transition ${
-                  isActive(link.href)
-                    ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                    : "text-gray-600 hover:text-gray-800"
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-xs font-bold tracking-widest ${
+                pathname === link.href ? 'text-[#0047AB]' : 'text-gray-500 hover:text-gray-900'
+              } transition-colors`}
+            >
+              {link.label}
+            </Link>
           ))}
-        </ul>
+        </nav>
 
-        <Link
-          href="/contact"
-          className="hidden md:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-700 transition"
-        >
-          Book a Free Consultation
-        </Link>
+        <div className='hidden md:flex items-center'>
+          <Link
+            href='/contact'
+            className='bg-[#0047AB] text-white text-[10px] font-black tracking-[0.2em] px-6 py-3 rounded hover:bg-[#003d96] transition-all flex items-center gap-2'
+          >
+            BOOK A FREE CONSULTATION
+          </Link>
+        </div>
 
-        <div className="md:hidden" />
-
-        <button
-          className="md:hidden p-2 text-gray-600 hover:text-gray-800"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
+        <button className='md:hidden' onClick={() => setMenuOpen(!menuOpen)}>
+          <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d={menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'} />
+          </svg>
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-200">
-          <ul className="flex flex-col space-y-2 px-4 py-3">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`block ${
-                    isActive(link.href)
-                      ? "text-blue-600 font-semibold"
-                      : "text-gray-600 hover:text-gray-800"
-                  }`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className='md:hidden bg-white border-t border-gray-100 p-4 space-y-4'>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className='block text-xs font-bold tracking-widest text-gray-900'
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href='/contact'
+            className='block bg-[#0047AB] text-white text-[10px] font-bold tracking-[0.2em] px-6 py-3 rounded text-center'
+            onClick={() => setMenuOpen(false)}
+          >
+            BOOK A FREE CONSULTATION
+          </Link>
         </div>
       )}
-    </nav>
+    </header>
   );
 }

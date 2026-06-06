@@ -6,7 +6,7 @@ export default function DetailServiceSection() {
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-2">
           {/* Service Card 1 - Landing Page */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start hover:shadow-lg transition">
             <div className="mb-4">
               <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -40,14 +40,14 @@ export default function DetailServiceSection() {
             </ul>
             <Link
               href="/contact"
-              className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
             >
               Get in Touch
             </Link>
           </div>
 
           {/* Service Card 2 - Website */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start hover:shadow-lg transition">
             <div className="mb-4">
               <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -81,14 +81,14 @@ export default function DetailServiceSection() {
             </ul>
             <Link
               href="/contact"
-              className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
             >
               Get in Touch
             </Link>
           </div>
 
           {/* Service Card 3 - Ecommerce */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start hover:shadow-lg transition">
             <div className="mb-4">
               <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -122,14 +122,14 @@ export default function DetailServiceSection() {
             </ul>
             <Link
               href="/contact"
-              className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
             >
               Get in Touch
             </Link>
           </div>
 
           {/* Service Card 4 - SEO */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start hover:shadow-lg transition">
             <div className="mb-4">
               <svg className="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -163,7 +163,7 @@ export default function DetailServiceSection() {
             </ul>
             <Link
               href="/contact"
-              className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
             >
               Get in Touch
             </Link>

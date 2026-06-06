@@ -1,26 +1,52 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --color-primary: #2563EB;
-  --color-secondary: #1E40AF;
-  --color-tertiary: #334155;
-  --color-neutral: #d6d8dd;
+@theme {
+  --color-primary: #0047AB;
+  --color-secondary: #002D62;
+  --color-accent: #3B82F6;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-text-main: #1E293B;
+  --color-text-muted: #64748B;
 
-  --font-headline: "Geist", sans-serif;
-  --font-body: "Geist", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--color-neutral);
-  --color-foreground: var(--color-tertiary);
-  --color-surface: var(--color-neutral);
-  --font-sans: var(--font-body);
-  --font-mono: var(--font-mono);
+:root {
+  --foreground-rgb: 30, 41, 59;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 255, 255, 255;
 }
 
 body {
-  background: var(--color-neutral);
-  color: var(--color-tertiary);
-  font-family: var(--font-body);
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0047AB] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#003d96] transition-all flex items-center justify-center gap-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-gray-200 text-gray-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-50 transition-all flex items-center justify-center gap-2;
+  }
+
+  .card-premium {
+    @apply bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300;
+  }
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #0047AB 0%, #002D62 100%);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }

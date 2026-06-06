@@ -1,10 +1,12 @@
+import Logo from './Logo';
+
 export default function Footer() {
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="text-center md:text-left md:pl-8">
-          <h2 className="text-xl font-bold text-gray-800">VDMarketing</h2>
-          <p className="text-gray-600 mt-1">
+          <Logo />
+          <p className="text-gray-600 mt-3">
             We transform your online presence with web design, SEO, and marketing.
           </p>
         </div>

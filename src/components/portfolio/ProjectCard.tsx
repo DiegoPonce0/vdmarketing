@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-scale-down bg-gray-100"
         />
       </Link>
       <div className="p-5">
