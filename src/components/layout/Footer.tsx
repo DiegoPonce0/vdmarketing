@@ -12,13 +12,16 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-6">
-          <a href="#" className="text-gray-600 hover:text-gray-800">
+          <a href="/services" className="text-gray-600 hover:text-gray-800">
             Services
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">
+          <a href="/portfolio" className="text-gray-600 hover:text-gray-800">
+            Portfolio
+          </a>
+          <a href="/blog" className="text-gray-600 hover:text-gray-800">
             Blog
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">
+          <a href="/contact" className="text-gray-600 hover:text-gray-800">
             Contact
           </a>
         </div>
