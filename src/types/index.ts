@@ -1,9 +1,22 @@
+export interface PostSection {
+  type: "intro" | "section" | "conclusion" | "cta";
+  heading?: string;
+  content: string;
+}
+
+export interface PostFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface Post {
   id: string;
   slug: string;
   title: string;
   excerpt: string;
   content: string;
+  sections?: PostSection[];
+  faq?: PostFAQ[];
   date: string;
   tags: string[];
   image: string;
@@ -36,4 +49,3 @@ export interface ContactFormData {
   service: string;
   message: string;
 }
-
