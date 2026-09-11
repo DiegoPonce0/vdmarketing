@@ -25,19 +25,14 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center justify-center md:justify-end md:pr-8 space-x-4">
-          <a href="#" className="text-gray-600 hover:text-blue-600 transition" aria-label="Facebook">
+          <a href="https://www.facebook.com/people/VD-Marketing/61561624524521/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition" aria-label="Facebook">
             <svg className="w-6 h-6" fill="currentColor">
               <use href="/icons/sprite.svg#facebook" />
             </svg>
           </a>
-          <a href="#" className="text-gray-600 hover:text-pink-600 transition" aria-label="Instagram">
+          <a href="https://www.instagram.com/vdmarketingltd/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600 transition" aria-label="Instagram">
             <svg className="w-6 h-6" fill="currentColor">
               <use href="/icons/sprite.svg#instagram" />
-            </svg>
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-700 transition" aria-label="LinkedIn">
-            <svg className="w-6 h-6" fill="currentColor">
-              <use href="/icons/sprite.svg#linkedin" />
             </svg>
           </a>
         </div>
