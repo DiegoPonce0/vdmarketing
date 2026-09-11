@@ -50,15 +50,15 @@ export default function ServicesSection() {
           {services.map((service, idx) => (
             <div key={idx} className='bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group cursor-default h-full flex flex-col justify-between'>
               <div>
-                <div className='w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#1E3A8A] transition-colors'>
-                  <span className='group-hover:text-white transition-colors'>{service.icon}</span>
+                <div className='w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6'>
+                  <span className='transition-transform duration-300 group-hover:scale-125'>{service.icon}</span>
                 </div>
                 <h3 className='text-xl font-bold text-gray-900 mb-4'>{service.title}</h3>
                 <p className='text-gray-500 text-sm leading-relaxed mb-6'>
                   {service.desc}
                 </p>
               </div>
-              <a href='#' className='text-[#1E3A8A] text-xs font-black tracking-widest flex items-center gap-2 hover:gap-3 transition-all uppercase'>
+              <a href='/services' className='text-[#1E3A8A] text-xs font-black tracking-widest flex items-center gap-2 hover:gap-3 transition-all uppercase'>
                 Learn More
                 <svg className='w-3 h-3' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M14 5l7 7m0 0l-7 7m7-7H3' />

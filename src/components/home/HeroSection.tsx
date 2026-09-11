@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -17,15 +18,21 @@ export default function HeroSection() {
               We build high-performing websites, eCommerce stores, and digital experiences designed to attract customers and increase revenue.
             </p>
             <div className='flex flex-wrap gap-4'>
-              <button className='bg-[#0047AB] text-white text-xs font-black tracking-widest px-8 py-4 rounded hover:bg-[#003d96] transition-all flex items-center gap-3'>
+              <Link
+                href='/contact'
+                className='bg-[#0047AB] text-white text-xs font-black tracking-widest px-8 py-4 rounded hover:bg-[#003d96] transition-all flex items-center gap-3'
+              >
                 GET A FREE QUOTE
                 <svg className='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                   <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M14 5l7 7m0 0l-7 7m7-7H3' />
                 </svg>
-              </button>
-              <button className='border-2 border-gray-100 text-gray-400 text-xs font-black tracking-widest px-8 py-4 rounded hover:border-gray-200 hover:text-gray-600 transition-all uppercase'>
-                View Our Work
-              </button>
+              </Link>
+              <Link
+                href='/services'
+                className='border-2 border-gray-100 text-gray-400 text-xs font-black tracking-widest px-8 py-4 rounded hover:border-gray-200 hover:text-gray-600 transition-all uppercase'
+              >
+                Our Services
+              </Link>
             </div>
           </div>
 

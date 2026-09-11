@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+type SubmitState = "idle" | "sending" | "success" | "error";
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,14 +12,38 @@ export default function ContactForm() {
     service: "",
     message: "",
   });
+  const [submitState, setSubmitState] = useState<SubmitState>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+    setSubmitState("sending");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setErrorMessage(data.error || "Something went wrong. Please try again.");
+        setSubmitState("error");
+        return;
+      }
+
+      setSubmitState("success");
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    } catch {
+      setErrorMessage("Network error. Please try again.");
+      setSubmitState("error");
+    }
   };
 
   return (
@@ -108,11 +134,24 @@ export default function ContactForm() {
           />
         </div>
 
+        {submitState === "success" && (
+          <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md">
+            Thanks! Your message has been sent. We&apos;ll get back to you shortly.
+          </div>
+        )}
+
+        {submitState === "error" && (
+          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+            {errorMessage}
+          </div>
+        )}
+
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition"
+          disabled={submitState === "sending"}
+          className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          Send Message
+          {submitState === "sending" ? "Sending..." : "Send Message"}
         </button>
       </form>
     </div>

@@ -14,7 +14,7 @@ export default function ContactInfo() {
         </div>
         <div>
           <h3 className="text-lg font-semibold text-gray-800">Call Us</h3>
-          <p className="text-gray-600">+1 (555) 123-4567</p>
+          <p className="text-gray-600">+1 236 989 4994</p>
         </div>
       </div>
 

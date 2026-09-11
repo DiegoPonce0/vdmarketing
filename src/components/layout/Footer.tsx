@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -12,18 +13,15 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-6">
-          <a href="/services" className="text-gray-600 hover:text-gray-800">
+          <Link href="/services" className="text-gray-600 hover:text-gray-800">
             Services
-          </a>
-          <a href="/portfolio" className="text-gray-600 hover:text-gray-800">
+          </Link>
+          <Link href="/portfolio" className="text-gray-600 hover:text-gray-800">
             Portfolio
-          </a>
-          <a href="/blog" className="text-gray-600 hover:text-gray-800">
-            Blog
-          </a>
-          <a href="/contact" className="text-gray-600 hover:text-gray-800">
+          </Link>
+          <Link href="/contact" className="text-gray-600 hover:text-gray-800">
             Contact
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center justify-center md:justify-end md:pr-8 space-x-4">
